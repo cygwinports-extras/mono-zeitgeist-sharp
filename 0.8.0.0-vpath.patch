@@ -1,0 +1,11 @@
+--- origsrc/zeitgeist-sharp-0.8.0.0/Zeitgeist/Makefile.am	2010-11-09 09:01:04.000000000 -0600
++++ src/zeitgeist-sharp-0.8.0.0/Zeitgeist/Makefile.am	2011-07-11 00:31:54.477669300 -0500
+@@ -6,7 +6,7 @@ XBUILD_FLAGS = /p:Configuration=Debug /p
+ ZS_SOURCE_FILES = $(foreach pattern, $(SOURCE_PATTERNS), $(wildcard $(pattern)))
+ ZS_ASSEMBLY_NAME = zeitgeist-sharp
+ ZS_ASSEMBLY_TARGET = $(OUTPUT_DIR)/$(ZS_ASSEMBLY_NAME).dll
+-ZS_ASSEMBLY_PC = $(srcdir)/$(PACKAGE_NAME).pc
++ZS_ASSEMBLY_PC = $(PACKAGE_NAME).pc
+ ZS_BUILD_FILE = $(srcdir)/Zeitgeist.csproj
+ ZS_XBUILD_FLAGS = $(XBUILD_FLAGS)
+ ZS_GACUTIL_INSTALL = $(GACUTIL) -i $(ZS_ASSEMBLY_TARGET) -f $(GACUTIL_FLAGS)

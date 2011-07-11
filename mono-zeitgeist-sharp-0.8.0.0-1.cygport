@@ -1,0 +1,9 @@
+ORIG_PN="zeitgeist-sharp"
+inherit mono
+
+
+HOMEPAGE="http://zeitgeist-project.com/"
+SRC_URI="http://launchpad.net/${ORIG_PN}/${PV[1]}.${PV[2]}/${PV[1]}.${PV[2]}.${PV[3]}/+download/${ORIG_PN}-${PV}.tar.gz"
+PATCH_URI="0.8.0.0-vpath.patch"
+
+MAKEOPTS+=" -j1"

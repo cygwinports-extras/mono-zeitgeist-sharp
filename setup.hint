@@ -1,0 +1,5 @@
+category: DotNET
+requires: mono-dbus-sharp-glib1.0 mono-dbus-sharp1.0 mono-glib-sharp2.0
+sdesc: "Mono Zeitgeist client library"
+ldesc: "zeitgeist-sharp is a managed C# wrapper of the Zeitgeist DBus 
+API. It exposes Log, Blacklist, Monitor and DataSources."
